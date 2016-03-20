@@ -1,0 +1,22 @@
+# ind_zadanie
+<!DOCTYPE html>
+<html>
+<head></head>
+<body> 
+<script>
+    var string_ = "";
+     var u11;
+    var u22;
+    var u1 = new Array();
+    var u2 = new Array();
+   for (var k = 0; k <= 15; k++) {
+ u1[k] = (Math.pow(((1 + Math.pow(5, 0.5)) / 2), k)) / Math.pow(5, 0.5) - (Math.pow(((1 - Math.pow(5, 0.5)) / 2), k)) / Math.pow(5, 0.5);
+  u2[k] = (Math.pow(((1 + Math.pow(5, 0.5)) / 2), k)) / Math.pow(5, 0.5);
+ u1[k] = Math.round(u1[k]);
+  u2[k] = Math.round(u2[k]);
+  string_ = string_ + u1[k] + " ,     " + u2[k] + "<br>";
+  }
+  document.write(string_);
+</script>
+</body>
+</html>
